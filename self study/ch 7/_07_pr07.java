@@ -1,0 +1,18 @@
+
+public class _07_pr07 {
+
+    static void pattern(int row) {
+        if (row > 0) {
+            for (int i = 1; i<= row; i++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+            pattern(row-1);
+        }
+    }
+
+    public static void main(String[] args) {
+        pattern(4);
+    }
+
+}
